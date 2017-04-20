@@ -1,4 +1,6 @@
 import winDebugger
 
 debugger = winDebugger.debugger()
-debugger.load("C:\Windows\System32\calc.exe")
+pid = raw_input("Enter pid: ")
+debugger.attach(int(pid))
+debugger.detach()
